@@ -31,6 +31,12 @@ The following STRETCH features are implemented:
 
 Here's a video / GIF that demos all of the app's implemented features:
 
+
+
+https://github.com/user-attachments/assets/34976d14-029d-40a3-958d-5270bb4cb472
+
+
+
 GIF created with **Android Screen Recorder**
 
 <!-- Recommended tools:
