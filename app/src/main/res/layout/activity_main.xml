@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/PaymentText"
+        android:layout_width="82dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Payment: "
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <EditText
+        android:id="@+id/BasePayTextbox"
+        android:layout_width="1in"
+        android:layout_height="0.4in"
+        android:layout_marginStart="8dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/PaymentText"
+        app:layout_constraintStart_toEndOf="@+id/PaymentText"
+        app:layout_constraintTop_toTopOf="@+id/PaymentText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/Slider"
+        android:layout_width="1in"
+        android:layout_height="0.25in"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:stepSize="1"
+        android:valueFrom="15"
+        android:valueTo="100"
+        app:layout_constraintBottom_toTopOf="@+id/TipLabel"
+        app:layout_constraintStart_toEndOf="@+id/PercentLabel"
+        app:layout_constraintTop_toBottomOf="@+id/PaymentText"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/PercentLabel"
+        android:layout_width="82dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="%: "
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <TextView
+        android:id="@+id/TipAmount"
+        android:layout_width="176dp"
+        android:layout_height=".3in"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/TipLabel"
+        app:layout_constraintStart_toEndOf="@+id/TipLabel"
+        app:layout_constraintTop_toTopOf="@+id/TipLabel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/TotalAmount"
+        android:layout_width="176dp"
+        android:layout_height=".3in"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/TotalLabel"
+        app:layout_constraintStart_toEndOf="@+id/TotalLabel"
+        app:layout_constraintTop_toTopOf="@+id/TotalLabel"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/TipLabel"
+        android:layout_width="82dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Tip: "
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <TextView
+        android:id="@+id/TotalLabel"
+        android:layout_width="82dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Total: "
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
