@@ -10,7 +10,7 @@ Time spent: **1** hours spent in total
 
 **CodeMath** is an android app that **calculates a tip & total based off a base amount and a percentage**
 
-If I had to describe this project in three (3) emojis, they would be: ** 🖩 🧠 🍽**
+If I had to describe this project in three (3) emojis, they would be: **🖩 🧠 🍽**
 
 ## Application Features
 
